@@ -44,3 +44,5 @@ OH-LKM), mallin (EMBRAER ERJ-190-100), sekä muista teknisiä tietoja. Tätä ka
 
 ## Lähteet:
 Tero Karvinen 2026. Verkkoon tunkeutuminen ja tiedustelu. Luettavissa: https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/ Luettu 25.10.2026.
+
+ADS-B Exchange s.a. Track aircraft live. Lähde: https://globe.adsbexchange.com/ Käytetty 25.10.2025

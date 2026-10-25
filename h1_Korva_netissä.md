@@ -3,7 +3,10 @@
 - Opettaja: Tero Karvinen
 - Raportin kirjoittaja: Vili Virtanen
 ## x) Spektrini. 
-Piirrä oma sähkömagneettinen spektri. Eli jana, jossa taajuus kasvaa. Ja 3-10 itseäsi kiinnostavaa sovellusta. Saavat olla aivan tavanomaisia. Merkitse nuolilla, mihin suuntaa kasvavat: aallonpituus, antennin koko, läpäisevyys, kyky siirtää tietoa. Tämä alakohta ei edellytä testejä tietokoneella.
+Piirretään oma sähkömagneettinen spektrimme: 
+
+<img width="2360" height="1640" alt="Untitled_Artwork" src="https://github.com/user-attachments/assets/25829d78-b32a-4576-b380-fb08efd83f5a" />
+
 ## a) WebSDR. 
 Etäkäytä WebSDR-ohjelmaradiota, joka on kaukana käyttäjästä ja kuuntele radioliikennettä. 
 

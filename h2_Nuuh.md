@@ -44,6 +44,11 @@ Yhteys ei kulje! Pystymme yhteyttä kaivatessa palauttamaan tämän samasta kohd
 
 Yhteytemme toimii jälleen!
 
+HUOM! Näytetty tapa on varma keino jolla yhteys katkeaa. Yhteyden voi myös katkaista Kalista, näytön oikean yläkulman Ethernet Network valikosta simppelillä disconnect valinnalla.
+
+<img width="458" height="193" alt="VirtualBox_Kali_01_11_2026_23_13_49" src="https://github.com/user-attachments/assets/28e07176-cb87-4603-bd6c-32204ddfd76b" />
+
+
 ## c) Wireshark. Asenna Wireshark. Sieppaa liikennettä Wiresharkilla. 
 Wireshark löytyy valmiiksi jo Kali-koneestani, mutta tämän asennus onnistuu helposti komennoilla:
 

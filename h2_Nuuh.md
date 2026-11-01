@@ -29,7 +29,7 @@ Tämän jälkeen varmistin kaikkien ohjelmieni olevan päivitettynä komennoilla
 ## b) Ei voi kalastaa. Osoita, että pystyt katkaisemaan ja palauttamaan virtuaalikoneen Internet-yhteyden.
 Virtuaalikoneen Internet-yhteyden katkaisu onnistuu helposti suuntaamalla Oracle VirtualBox Manageriin ja meidän Kali-koneemme asetuksiin ja poistamalla täpän kohdasta Settings>Network>Enable Network Adapter.
 
-<img width="966" height="616" alt="Näyttökuva 2026-11-01 204000" src="https://github.com/user-attachments/assets/3d4a8f1b-290a-42b8-a6ee-29d05c9a330f" 
+<img width="966" height="616" alt="Näyttökuva 2026-11-01 204000" src="https://github.com/user-attachments/assets/3d4a8f1b-290a-42b8-a6ee-29d05c9a330f" />
 
 Tämän jälkeen voimme kokeilla yhteyttä komennolla:
 

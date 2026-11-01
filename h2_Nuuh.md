@@ -78,12 +78,34 @@ Internet = Internet Protocol Version 4
 Kuljetuskerros = User Datagram Protocol
 Sovelluskerros = Domain Name Protocol
 ```
-## e) Mitäs tuli surffattua? Avaa surfing-secure.pcap. Tutustu siihen pintapuolisesti ja kuvaile, millainen kaappaus on kyseessä. Tässä siis vain lyhyesti ja yleisellä tasolla. Voit esimerkiksi vilkaista, montako konetta näkyy, mitä protokollia pistää silmään. Määrästä voit arvioida esimerkiksi pakettien lukumäärää, kaappauksen kokoa ja kestoa.
+## e) Mitäs tuli surffattua? Avaa surfing-secure.pcap. Tutustu siihen pintapuolisesti ja kuvaile, millainen kaappaus on kyseessä. 
+Latasin tehtävänannossa mainitun ```surfing-secure.pcap```-tiedoston ja avasin tämän Wiresharkissa.
+
+<img width="1478" height="701" alt="VirtualBox_Kali_01_11_2026_21_55_14" src="https://github.com/user-attachments/assets/ef25133a-3668-499b-83e6-503e9a5ed7bf" />
+
+Aukeava tiedosto paljaa kaapatun verkkoyhteyden, jossa nopealla vilkaisulla näemme käyttäjän menneen Googleen ja täältä terokarvinen.com -sivulle. Tämän lisäksi näemme tiedoista, että kyseinen kaappaus sisältää 283 pakettia.
 ## g) Minkä merkkinen verkkokortti käyttäjällä on? surfing-secure.pcap
+Normaalisti voimme tutkia käyttäjän verkkokorttia MAC-osoitteen avulla. MAC-osoite sijaitsee ETHERNET II-tasolla, ja pystymme kurkkaamaankin helposti tästä tietoja hakutulostemme alta.
+
+<img width="1486" height="703" alt="VirtualBox_Kali_01_11_2026_22_01_06" src="https://github.com/user-attachments/assets/0ff209ba-dfbc-4d2e-8e1f-f2232ec7a1ef" />
+
+Kurkistaessamme kaappaukseen näemme kuitenkin, että kaapattussa lähetyksessä käytetty MAC-osoite ei ole oletuksellinen osoite, jolloin emme löydä tästä helposti lisätietoja käyttäen verkosta löytyviä MAC-osoitteiden tarkistuspalveluita... MAC-osoitteemme on siis satunnaistettu, emmekä pysty selvittämään tätä.
 ## h) Millä weppipalvelimella käyttäjä on surffaillut? surfing-secure.pcap
+Hakemalla hakukentästä "dns" näemme kaikki nimipalvelut joilla käyttäjä on käynyt.
+
+<img width="1920" height="601" alt="VirtualBox_Kali_01_11_2026_22_19_43" src="https://github.com/user-attachments/assets/143e1c21-242d-4f21-ab76-b27b185b0a03" />
+
+Sivustoja ovat:
+- google.com
+- terokarvinen.com
+- gc.zgo.at
+- goatcounter.netlify.com
+- commentero.terokarvinen.com
 ## i) Analyysi. Sieppaa pieni määrä omaa liikennettäsi. 
 Analysoi se, eli selitä mahdollisimman perusteellisesti, mitä tapahtuu. (Tässä pääpaino on siis analyysillä ja selityksellä, joten liikennettä kannattaa ottaa tarkasteluun todella vähän - vaikka vain pari pakettia. Gurut huomio: Selitä myös mielestäsi yksinkertaiset asiat.)
 ## Lähteet:
 Karvinen 2025: Wireshark - Getting Started. Luettavissa: https://terokarvinen.com/wireshark-getting-started/ Luettu 1.11.2026
 
 Karvinen 2025: Network Interface Names on Linux. Luettavissa: https://terokarvinen.com/network-interface-linux/ Luettu 1.11.2026
+
+Karvinen 2026: Verkkoon tunkeutuminen ja tiedustelu. Luettavissa: https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/ Luettu 1.11.2026

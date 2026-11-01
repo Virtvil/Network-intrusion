@@ -1,6 +1,6 @@
 # h2 Nuuh
 - Kurssi: Verkkoon tunkeutuminen ja tiedustelu (Karvinen 2026)
-- Opettaja: Tero Karvinen
+- Opettaja: Tero Karvinen & Lari Iso-Anttila
 - Raportin kirjoittaja: Vili Virtanen
 ## x) Materiaalit
 ### Karvinen 2025: Wireshark - Getting Started

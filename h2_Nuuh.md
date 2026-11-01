@@ -1,9 +1,18 @@
 # h2 Nuuh
-
+- Kurssi: Verkkoon tunkeutuminen ja tiedustelu (Karvinen 2026)
+- Opettaja: Tero Karvinen
+- Raportin kirjoittaja: Vili Virtanen
 ## x) Materiaalit
 ### Karvinen 2025: Wireshark - Getting Started
+- Wireshark on ohjelma jolla voidaan kaapata, sekä analysoida verkkoliikennettä reaaliajassa.
+- Kaapattua liikennettä pystyy tutkimaan ja filtteröimään.
+- Kaapatun liikenteen pystyy myös tallentamaan myöhempää tutkailua varten.
 ### Karvinen 2025: Network Interface Names on Linux
-
+- Verkkoliittymä (Network Interface) on toimii kuten verkkokortti, mutta tämän ei tarvitse olla fyysinen.
+- Nimeämiskäytännöt:
+  - en = langallinen ethernet
+  - wl = wlan (langaton verkkoyhteys=
+  - lo = loopback a
 ## a) Linux. Asenna Debian tai Kali Linux virtuaalikoneeseen. (Tätä alakohtaa ei poikkeuksellisesti tarvitse raportoida, jos sinulla ei ole mitään ongelmia. Jos on mitään haasteita, tee täsmällinen raportti)
 ## b) Ei voi kalastaa. Osoita, että pystyt katkaisemaan ja palauttamaan virtuaalikoneen Internet-yhteyden.
 ## c) Wireshark. Asenna Wireshark. Sieppaa liikennettä Wiresharkilla. (Vain omaa liikennettäsi. Voit käyttää tähän esimerkiksi virtuaalikonetta).

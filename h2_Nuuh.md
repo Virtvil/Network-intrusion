@@ -66,7 +66,9 @@ Avataan seuraavaksi Wireshark ja verkkoyhteys haluamallemme sivulle. Aloitetaan 
 
 Kaappauksen pystyy lopettamaan pyrstön (aloituspainikkeemme) viereisestä stop-painikkeesta.
 ## d) Oikeesti TCP/IP. Osoita TCP/IP-mallin neljä kerrosta yhdestä siepatusta paketista. Selityksen lisäksi laatikoi ne ruutukaappauksesta.
-Pystymme tutkimaan helpommin nappaamaamme dataa suuntaamalla Wiresharkissa kohtaan statistics>Protocol Hierarchy.
+Pystymme tutkimaan helpommin kuinka nappaamamme data sijoittuu eri kerroksille suuntaamalla Wiresharkissa kohtaan statistics>Protocol Hierarchy.
+
+Normaalisti tiedot näkyisivät vain alaspäin vilkaisemalla, mutta tiedot jäsentyvät mielestäni näin helpommin.
 
 <img width="787" height="353" alt="VirtualBox_Kali_01_11_2026_21_08_02" src="https://github.com/user-attachments/assets/09211837-0c40-48de-bb3e-36857afe7f57" />
 

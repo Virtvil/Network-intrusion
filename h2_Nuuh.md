@@ -27,7 +27,39 @@ Asennus suijuikin ilman kummempia vaivoja, vaikka veikin normaalia Debian-versio
 Tämän jälkeen varmistin kaikkien ohjelmieni olevan päivitettynä komennoilla "sudo apt-get update" ja "sudo apt-get upgrade"
 ```
 ## b) Ei voi kalastaa. Osoita, että pystyt katkaisemaan ja palauttamaan virtuaalikoneen Internet-yhteyden.
-## c) Wireshark. Asenna Wireshark. Sieppaa liikennettä Wiresharkilla. (Vain omaa liikennettäsi. Voit käyttää tähän esimerkiksi virtuaalikonetta).
+Virtuaalikoneen Internet-yhteyden katkaisu onnistuu helposti suuntaamalla Oracle VirtualBox Manageriin ja meidän Kali-koneemme asetuksiin ja poistamalla täpän kohdasta Settings>Network>Enable Network Adapter.
+
+<img width="966" height="616" alt="Näyttökuva 2026-11-01 204000" src="https://github.com/user-attachments/assets/3d4a8f1b-290a-42b8-a6ee-29d05c9a330f" 
+
+Tämän jälkeen voimme kokeilla yhteyttä komennolla:
+
+```
+ping 1.1.1.1
+```
+<img width="524" height="114" alt="VirtualBox_Kali_01_11_2026_20_39_01" src="https://github.com/user-attachments/assets/e40cb2e3-1e89-457a-962e-f66dcf5dbc56" />
+
+Yhteys ei kulje! Pystymme yhteyttä kaivatessa palauttamaan tämän samasta kohdasta kuin irroitimmekin. Yhteyden testaus on suotavaa tämän jälkeen.
+
+<img width="507" height="246" alt="VirtualBox_Kali_01_11_2026_20_45_54" src="https://github.com/user-attachments/assets/2c328416-534e-4f1b-9319-5bfcc5e4820a" />
+
+Yhteytemme toimii jälleen!
+
+## c) Wireshark. Asenna Wireshark. Sieppaa liikennettä Wiresharkilla. 
+Wireshark löytyy valmiiksi jo Kali-koneestani, mutta tämän asennus onnistuu helposti komennoilla:
+
+```
+sudo apt update
+sudo apt-get install wireshark
+```
+
+Näytetään nyt kuitenkin, että wireshark meiltä löytyy, käyttämällä komentoa:
+
+```
+wireshark --version
+```
+
+<img width="728" height="247" alt="VirtualBox_Kali_01_11_2026_20_56_04" src="https://github.com/user-attachments/assets/abe5b33c-c212-42ac-8f22-0f85e297578e" />
+
 ## d) Oikeesti TCP/IP. Osoita TCP/IP-mallin neljä kerrosta yhdestä siepatusta paketista. Selityksen lisäksi laatikoi ne ruutukaappauksesta.
 ## e) Mitäs tuli surffattua? Avaa surfing-secure.pcap. Tutustu siihen pintapuolisesti ja kuvaile, millainen kaappaus on kyseessä. Tässä siis vain lyhyesti ja yleisellä tasolla. Voit esimerkiksi vilkaista, montako konetta näkyy, mitä protokollia pistää silmään. Määrästä voit arvioida esimerkiksi pakettien lukumäärää, kaappauksen kokoa ja kestoa.
 ## g) Minkä merkkinen verkkokortti käyttäjällä on? surfing-secure.pcap

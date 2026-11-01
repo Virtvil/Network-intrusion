@@ -91,7 +91,7 @@ Normaalisti voimme tutkia käyttäjän verkkokorttia MAC-osoitteen avulla. MAC-o
 
 <img width="1486" height="703" alt="VirtualBox_Kali_01_11_2026_22_01_06" src="https://github.com/user-attachments/assets/0ff209ba-dfbc-4d2e-8e1f-f2232ec7a1ef" />
 
-Kurkistaessamme kaappaukseen näemme kuitenkin, että kaapattussa lähetyksessä käytetty MAC-osoite ei ole oletuksellinen osoite, jolloin emme löydä tästä helposti lisätietoja käyttäen verkosta löytyviä MAC-osoitteiden tarkistuspalveluita... MAC-osoitteemme on siis satunnaistettu, emmekä pysty selvittämään tätä.
+Kurkistaessamme kaappaukseen näemme kuitenkin, että kaapattussa lähetyksessä käytetty MAC-osoite ei ole oletuksellinen osoite, jolloin emme löydä tästä helposti lisätietoja käyttäen verkosta löytyviä MAC-osoitteiden tarkistuspalveluita... MAC-osoitteemme on siis satunnaistettu, emmekä pysty selvittämään tätä (ainakaan tällä hetkellä oppimillamme toiminnoilla).
 ## h) Millä weppipalvelimella käyttäjä on surffaillut? 
 Hakemalla hakukentästä "dns" näemme kaikki nimipalvelut joilla käyttäjä on käynyt.
 

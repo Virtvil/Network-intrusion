@@ -84,13 +84,13 @@ Latasin tehtävänannossa mainitun ```surfing-secure.pcap```-tiedoston ja avasin
 <img width="1478" height="701" alt="VirtualBox_Kali_01_11_2026_21_55_14" src="https://github.com/user-attachments/assets/ef25133a-3668-499b-83e6-503e9a5ed7bf" />
 
 Aukeava tiedosto paljaa kaapatun verkkoyhteyden, jossa nopealla vilkaisulla näemme käyttäjän menneen Googleen ja täältä terokarvinen.com -sivulle. Tämän lisäksi näemme tiedoista, että kyseinen kaappaus sisältää 283 pakettia.
-## g) Minkä merkkinen verkkokortti käyttäjällä on? surfing-secure.pcap
+## g) Minkä merkkinen verkkokortti käyttäjällä on? 
 Normaalisti voimme tutkia käyttäjän verkkokorttia MAC-osoitteen avulla. MAC-osoite sijaitsee ETHERNET II-tasolla, ja pystymme kurkkaamaankin helposti tästä tietoja hakutulostemme alta.
 
 <img width="1486" height="703" alt="VirtualBox_Kali_01_11_2026_22_01_06" src="https://github.com/user-attachments/assets/0ff209ba-dfbc-4d2e-8e1f-f2232ec7a1ef" />
 
 Kurkistaessamme kaappaukseen näemme kuitenkin, että kaapattussa lähetyksessä käytetty MAC-osoite ei ole oletuksellinen osoite, jolloin emme löydä tästä helposti lisätietoja käyttäen verkosta löytyviä MAC-osoitteiden tarkistuspalveluita... MAC-osoitteemme on siis satunnaistettu, emmekä pysty selvittämään tätä.
-## h) Millä weppipalvelimella käyttäjä on surffaillut? surfing-secure.pcap
+## h) Millä weppipalvelimella käyttäjä on surffaillut? 
 Hakemalla hakukentästä "dns" näemme kaikki nimipalvelut joilla käyttäjä on käynyt.
 
 <img width="1920" height="601" alt="VirtualBox_Kali_01_11_2026_22_19_43" src="https://github.com/user-attachments/assets/143e1c21-242d-4f21-ab76-b27b185b0a03" />
@@ -102,7 +102,25 @@ Sivustoja ovat:
 - goatcounter.netlify.com
 - commentero.terokarvinen.com
 ## i) Analyysi. Sieppaa pieni määrä omaa liikennettäsi. 
-Analysoi se, eli selitä mahdollisimman perusteellisesti, mitä tapahtuu. (Tässä pääpaino on siis analyysillä ja selityksellä, joten liikennettä kannattaa ottaa tarkasteluun todella vähän - vaikka vain pari pakettia. Gurut huomio: Selitä myös mielestäsi yksinkertaiset asiat.)
+Päätin ottaa tehtävää varten vain muutaman paketin, joten päädyin pingaamaan Cloudflaren nimipalvelinta (ping 1.1.1.1) muutaman kerran, tallentaen liikenteen Wiresharkilla.
+
+<img width="1920" height="886" alt="VirtualBox_Kali_01_11_2026_22_54_43" src="https://github.com/user-attachments/assets/81ce93c5-cf14-42db-a010-66f07edc3596" />
+
+Rivit 1, 3, 5 ja 7 näyttävät virtuaalikoneelta lähtevät ping-pyynnöt palvelimelle ja rivit 2, 4, 6 ja 8 näyttävät täältä palautuvat vastaukset.
+
+Riveillä 9 ja 10 näkyvät tapahtuman ARP-kyselyt, joissa ARP-kyselyillä kysellään MAC osoitteita.
+
+Length-osio kertoo meille ICMP-protokollan viestien pituudeksi 98 tavua, ensimmäisen ARP kyselyn pituudeksi 42 tavua ja tämän vastauksen olleen 64 tavua.
+
+<img width="1055" height="323" alt="VirtualBox_Kali_01_11_2026_23_01_13" src="https://github.com/user-attachments/assets/a8306bfd-59ff-4105-9bcd-24a75a4f405a" />
+
+Tutkimalla kyselyn alla olevia tietokenttiä pystymme näkemään kyselyn tarkan ajankohdan (1.11.2026, klo 22:53).
+
+<img width="1030" height="197" alt="VirtualBox_Kali_01_11_2026_23_03_28" src="https://github.com/user-attachments/assets/90aa1759-7bd1-48b3-bd4b-d8e116024875" />
+
+Jatkamalla tutkintaa näemme, että käytössämme on PCSSystemtec_79 verkkokortti!
+
+Tehtävässä olisi varmasti ollut järkevämpää käyttää esimerkiksi aiempaa Googlen etusivua, sillä tämä verkkoyhteys loisi paljon enemmän kyselyitä tutkittavaksi.
 ## Lähteet:
 Karvinen 2025: Wireshark - Getting Started. Luettavissa: https://terokarvinen.com/wireshark-getting-started/ Luettu 1.11.2026
 

@@ -18,13 +18,10 @@ Olin asentanut Kalin itselleni jo aiemmalla kurssilla, tässä kuitenkin nopeat 
 
 ```
 Latasin itselleni Kali-imagen VirtualBox asennusta varten sivulta https://www.kali.org/get-kali/#kali-installer-images.
-
 Aluksi ihmettelin eri valintojen välillä, mutta päädyin normaaliin installer valintaan.
 
 Asennuksen aikana muutin virtuaalikonetta antamalla tälle enemmän muistia (4 GB) ja enemmän CPU voimaa (2 cpu).
-
 Asennuksessa käytin kalin sivuilta saatavaa "kali-linux-2026.2-installer-amd64" iso-tiedostoa.
-
 Asennus suijuikin ilman kummempia vaivoja, vaikka veikin normaalia Debian-versiota enemmän aikaa.
 
 Tämän jälkeen varmistin kaikkien ohjelmieni olevan päivitettynä komennoilla "sudo apt-get update" ja "sudo apt-get upgrade"

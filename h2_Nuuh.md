@@ -72,10 +72,12 @@ Pystymme tutkimaan helpommin nappaamaamme dataa suuntaamalla Wiresharkissa kohta
 
 <img width="1208" height="357" alt="VirtualBox_Kali_01_11_2026_21_17_38" src="https://github.com/user-attachments/assets/b05de7c7-e46f-476d-a760-1ffe59a7f901" />
 
+```
 Linkkikerros = Ethernet
 Internet = Internet Protocol Version 4 
 Kuljetuskerros = User Datagram Protocol
 Sovelluskerros = Domain Name Protocol
+```
 ## e) Mitäs tuli surffattua? Avaa surfing-secure.pcap. Tutustu siihen pintapuolisesti ja kuvaile, millainen kaappaus on kyseessä. Tässä siis vain lyhyesti ja yleisellä tasolla. Voit esimerkiksi vilkaista, montako konetta näkyy, mitä protokollia pistää silmään. Määrästä voit arvioida esimerkiksi pakettien lukumäärää, kaappauksen kokoa ja kestoa.
 ## g) Minkä merkkinen verkkokortti käyttäjällä on? surfing-secure.pcap
 ## h) Millä weppipalvelimella käyttäjä on surffaillut? surfing-secure.pcap

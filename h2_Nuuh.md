@@ -60,7 +60,22 @@ wireshark --version
 
 <img width="728" height="247" alt="VirtualBox_Kali_01_11_2026_20_56_04" src="https://github.com/user-attachments/assets/abe5b33c-c212-42ac-8f22-0f85e297578e" />
 
+Avataan seuraavaksi Wireshark ja verkkoyhteys haluamallemme sivulle. Aloitetaan painamalla hain pyrstöä sovelluksen vasemmasta yläkulmasta ja avaamalla verkkosivu (avasin itse verkkosivun Googlen aloitussivulle). Näemmekin heti yhteyden muodostuessa kuinka dataa alkaa "jäämään kiikkiin"!
+
+<img width="1494" height="823" alt="VirtualBox_Kali_01_11_2026_21_03_40" src="https://github.com/user-attachments/assets/294fc3f2-0055-4a2a-9c25-c62a4f394b16" />
+
+Kaappauksen pystyy lopettamaan pyrstön (aloituspainikkeemme) viereisestä stop-painikkeesta.
 ## d) Oikeesti TCP/IP. Osoita TCP/IP-mallin neljä kerrosta yhdestä siepatusta paketista. Selityksen lisäksi laatikoi ne ruutukaappauksesta.
+Pystymme tutkimaan helpommin nappaamaamme dataa suuntaamalla Wiresharkissa kohtaan statistics>Protocol Hierarchy.
+
+<img width="787" height="353" alt="VirtualBox_Kali_01_11_2026_21_08_02" src="https://github.com/user-attachments/assets/09211837-0c40-48de-bb3e-36857afe7f57" />
+
+<img width="1208" height="357" alt="VirtualBox_Kali_01_11_2026_21_17_38" src="https://github.com/user-attachments/assets/b05de7c7-e46f-476d-a760-1ffe59a7f901" />
+
+Linkkikerros = Ethernet
+Internet = Internet Protocol Version 4 
+Kuljetuskerros = User Datagram Protocol
+Sovelluskerros = Domain Name Protocol
 ## e) Mitäs tuli surffattua? Avaa surfing-secure.pcap. Tutustu siihen pintapuolisesti ja kuvaile, millainen kaappaus on kyseessä. Tässä siis vain lyhyesti ja yleisellä tasolla. Voit esimerkiksi vilkaista, montako konetta näkyy, mitä protokollia pistää silmään. Määrästä voit arvioida esimerkiksi pakettien lukumäärää, kaappauksen kokoa ja kestoa.
 ## g) Minkä merkkinen verkkokortti käyttäjällä on? surfing-secure.pcap
 ## h) Millä weppipalvelimella käyttäjä on surffaillut? surfing-secure.pcap

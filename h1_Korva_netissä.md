@@ -1,6 +1,6 @@
 # h1 Korva netissä
 - Kurssi: Verkkoon tunkeutuminen ja tiedustelu (Karvinen 2026)
-- Opettaja: Tero Karvinen
+- Opettaja: Tero Karvinen & Lari Iso-Anttila
 - Raportin kirjoittaja: Vili Virtanen
 ## x) Spektrini. 
 Piirretään oma sähkömagneettinen spektrimme: 

@@ -79,9 +79,9 @@ Ladataan jälleen kerran tehtävänannossa annettu tiedosto, _ 1-on-on-on-HackRF
 - Tieto-osio näyttää luomispäiväksi ajan jona se on ladattu, mutta tiedostonimen _"20250412"_-osio kertoo tämän olevan varmemminkin luotu 12.4.2025.
 
 <img width="955" height="488" alt="VirtualBox_Kali_08_11_2026_19_24_36" src="https://github.com/user-attachments/assets/aee1d475-f4df-430f-971d-08400fbc5793" />
+
 ## g) Bittistä
 Aloitetaan demodulaatiomme painamalla _Autodetect parameters_-nappia. Tämä näyttää pitävän modulaatiomme ASK-muodossa.
-
 
 <img width="288" height="312" alt="VirtualBox_Kali_08_11_2026_19_37_40" src="https://github.com/user-attachments/assets/f75ae413-d1f7-432a-a20f-fac7159fac24" />
 

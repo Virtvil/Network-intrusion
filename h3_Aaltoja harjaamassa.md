@@ -82,6 +82,7 @@ Ladataan jälleen kerran tehtävänannossa annettu tiedosto, _ 1-on-on-on-HackRF
 ## g) Bittistä
 Aloitetaan demodulaatiomme painamalla _Autodetect parameters_-nappia. Tämä näyttää pitävän modulaatiomme ASK-muodossa.
 
+
 <img width="288" height="312" alt="VirtualBox_Kali_08_11_2026_19_37_40" src="https://github.com/user-attachments/assets/f75ae413-d1f7-432a-a20f-fac7159fac24" />
 
 Vaihdetaan seuraavaksi _Signal View_ muotoon _Demodulated_. Tämän avulla näkymämme muuttuu hieman helpommin tarkasteltavaksi.

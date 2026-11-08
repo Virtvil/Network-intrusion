@@ -30,15 +30,32 @@ rtl_433 -V
 
 HUOM! Asennusvaiheessa tulee käyttää ohjelmassa väliviivaa, vaikka ohjelma esiintyykin Kalilla alaviivalla (ero - ja _).
 
+Tässävaiheessa tehtävänanto pyytää kokeilemaan ohjelman ajettavuus, mutta ilman kuuntelulaitetta tämä on hankalaa... Yhdistettyä laitetta voi ajaa kuitenkin simppleillä komennolla:
+```
+rtl_433
+```
+
+<img width="627" height="96" alt="VirtualBox_Kali_08_11_2026_18_29_15" src="https://github.com/user-attachments/assets/c629b24b-cb4a-4c1c-8013-1eee15dbbaa2" />
+
+Voimme kuitenkin komenolla todistaa ohjelman pyörivän.
 ## c) Automaattinen analyysi
+Ladataan seuraavaksi Karvisen [verkkosivulta](https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu) _Converted_433.92M_2000k.cs8_-tiedosto jota lähdemme tutkimaan. Siirryttyämme Downloads-hakemistoon voimme ajaa komentomme:
+```
+rtl_433 -r Converted_433.92M_2000k.cs8
+```
+
+<img width="955" height="806" alt="VirtualBox_Kali_08_11_2026_18_35_44" src="https://github.com/user-attachments/assets/a57b7c98-807e-48ca-bf80-5365606ff3a9" />
+
 ## d) Too compex 16?
 ## e) Ultimate. Asenna URH, the Ultimate Radio Hacker
 ## f) Yleiskuva
 ## g) Bittistä
 
 ## Lähteet:
+Cornelius 2022: Decode 433.92 MHz weather station data. Luettavissa: https://github.karllohner.com/SDR/Decoding/Example_2019-01-24/ Luettu 7.11.2026
+
 Hubacek 2019: Universal Radio Hacker SDR Tutorial on 433 MHz radio plugs. Katsottavissa: https://www.youtube.com/watch?v=sbqMqb6FVMY&t=199s Katsottu 7.11.2026
 
-Cornelius 2022: Decode 433.92 MHz weather station data. Luettavissa: https://github.karllohner.com/SDR/Decoding/Example_2019-01-24/ Luettu 7.11.2026
+Karvinen 2026: Verkkoon tunkeutuminen ja tiedustelu. Luettavissa: https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/ Luettu 8.11.2026
 
 merbanan, rtl_433. Luettavissa: https://github.com/merbanan/rtl_433 Luettu 8.11.2026

@@ -50,7 +50,14 @@ Kuvaa analysoimalla näemmä tämän olevan kolmen eri paketin, _KlikAanKlikUit-
 
 Veikkaisin kyseessä olevan jonkinlaisen kameran ja tämän kaukosäätimen, sillä _KlikAanKlikUit-Switch_ tuntuisi viittaavan jonkinlaiseen klikattavaan autosäätimeen ja molemmat _Proove-Securityn_ ja _Nexa-Securityn_ näyttäisivät jakavan nimessään Security-sanan, sekä tiedoissaan _House Code_-osion.
 ## d) Too compex 16?
+Ladataan jälleen tehtävänannossa annettu tiedosto: _Recorded-HackRF-20250411_183354-433_92MHz-2MSps-2MHz.complex16s_ ja kokeillaan lukea tämä edellisestä osiosta tutulla rtl_433 -r komennolla:
+```
+rtl_433 -r Recorded-HackRF-20250411_183354-433_92MHz-2MSps-2MHz.complex16s
+```
 
+<img width="955" height="319" alt="VirtualBox_Kali_08_11_2026_18_48_11" src="https://github.com/user-attachments/assets/abc94dcb-bec1-410f-84de-6ffca61bb482" />
+
+Komentomme toimii ja tiedoston sisätlö vaikuttaa samalta kuin aiemmassa tehtävässä. 
 ## e) Ultimate. Asenna URH, the Ultimate Radio Hacker
 ## f) Yleiskuva
 ## g) Bittistä

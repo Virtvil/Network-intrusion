@@ -8,9 +8,9 @@
 - Nauhoitettua signaalia pystyy tutkimaan paremmin tämän leikkaamisella ja rajaamisella.
 - Tallennettuja signaaleja pystyy avaamaan erilaisten valmiiden modulaatioiden ja _autodetect parameters_ avulla, joka muuttaa formaatin helpommin luettavaksi.
 ### Cornelius 2022: Decode 433.92 MHz weather station data
-- Sääaseman signaalin anyslointia käyttäen Universal Radio Hackeria.
-- Signaalia tutkiessa tämä näkyy lohkoissa.
-- Valittu viesti saadaan purettua näkymään muodossa "000101001000".
+- Sääaseman signaalin anyslointia.
+- Signaalin kaappaukseen ja tulkintaan Cornelius käytti rtl_433-ohjelmaa.
+- Tallentaakseen ja tutkiakseen signaalia tarkemmin hän käytti URH, Universal Radio Hacker ohjelmaa.
 ## b) rtl_433
 Asennusohjeet löytyvät rtl_433 githubista ja asennus onnistuu helposti komennolla:
 ```
@@ -79,8 +79,20 @@ Ladataan jälleen kerran tehtävänannossa annettu tiedosto, _ 1-on-on-on-HackRF
 - Tieto-osio näyttää luomispäiväksi ajan jona se on ladattu, mutta tiedostonimen _"20250412"_-osio kertoo tämän olevan varmemminkin luotu 12.4.2025.
 
 <img width="955" height="488" alt="VirtualBox_Kali_08_11_2026_19_24_36" src="https://github.com/user-attachments/assets/aee1d475-f4df-430f-971d-08400fbc5793" />
-
 ## g) Bittistä
+Aloitetaan demodulaatiomme painamalla _Autodetect parameters_-nappia. Tämä näyttää pitävän modulaatiomme ASK-muodossa.
+
+<img width="288" height="312" alt="VirtualBox_Kali_08_11_2026_19_37_40" src="https://github.com/user-attachments/assets/f75ae413-d1f7-432a-a20f-fac7159fac24" />
+
+Vaihdetaan seuraavaksi _Signal View_ muotoon _Demodulated_. Tämän avulla näkymämme muuttuu hieman helpommin tarkasteltavaksi.
+
+<img width="955" height="549" alt="VirtualBox_Kali_08_11_2026_19_40_24" src="https://github.com/user-attachments/assets/16c0dc53-b1f6-4b18-80f4-2c306b35f19f" />
+
+Nyt voimme valita näkymästämme yhden bitin ja tarkastella tästä tietoja!
+
+<img width="695" height="485" alt="VirtualBox_Kali_08_11_2026_19_42_12" src="https://github.com/user-attachments/assets/8a013f2f-e2f6-4465-99dd-ae0ddc93be6d" />
+
+Raakabittimme pituus näyttäisi olevan 500µs
 
 ## Lähteet:
 Cornelius 2022: Decode 433.92 MHz weather station data. Luettavissa: https://www.onetransistor.eu/2022/01/decode-433mhz-ask-signal.html Luettu 7.11.2026

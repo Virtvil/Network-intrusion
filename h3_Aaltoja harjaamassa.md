@@ -92,9 +92,11 @@ Nyt voimme valita näkymästämme yhden bitin ja tarkastella tästä tietoja!
 
 <img width="695" height="485" alt="VirtualBox_Kali_08_11_2026_19_42_12" src="https://github.com/user-attachments/assets/8a013f2f-e2f6-4465-99dd-ae0ddc93be6d" />
 
-Raakabittimme pituus näyttäisi olevan 500µs
+Raakabittimme pituus näyttäisi olevan 522µs. 1µs on kestoltaan microsekuntti, eli MILJOONASOSA sekuntti. Verrattaessa tähän ihmisen silmänräpäytys kestää 0.1-0.4 sekunttia. Nopealla laskutoimituksella (silmänräpäytyksen ollessa keskiarvo) tämä yksi bitti on siis 383 kertaa nopeampi kuin yksi silmänräpäytys!
 
 ## Lähteet:
+BNID 100706: Average duration of a single eye blink – Human Homo sapiens. Luettavissa: https://bionumbers.hms.harvard.edu/bionumber.aspx?id=100706 Luettu 8.11.2026
+
 Cornelius 2022: Decode 433.92 MHz weather station data. Luettavissa: https://www.onetransistor.eu/2022/01/decode-433mhz-ask-signal.html Luettu 7.11.2026
 
 Hubacek 2019: Universal Radio Hacker SDR Tutorial on 433 MHz radio plugs. Katsottavissa: https://www.youtube.com/watch?v=sbqMqb6FVMY&t=199s Katsottu 7.11.2026

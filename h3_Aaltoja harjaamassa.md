@@ -73,10 +73,17 @@ Ladataan jälleen kerran tehtävänannossa annettu tiedosto, _ 1-on-on-on-HackRF
 <img width="1920" height="564" alt="VirtualBox_Kali_08_11_2026_19_02_35" src="https://github.com/user-attachments/assets/c7f75a11-61db-424c-bc63-8ea453bc66e9" />
 
 ## f) Yleiskuva
+- Näyte näyttää olevan sieppaus kolmesta signaalista.
+- Klikkaamalla i-painiketta näemme, että näytteen kesto on 5.49 sekunttia.
+- Tiedoston koko on 10.47MB.
+- Tieto-osio näyttää luomispäiväksi ajan jona se on ladattu, mutta tiedostonimen _"20250412"_-osio kertoo tämän olevan varmemminkin luotu 12.4.2025.
+
+<img width="955" height="488" alt="VirtualBox_Kali_08_11_2026_19_24_36" src="https://github.com/user-attachments/assets/aee1d475-f4df-430f-971d-08400fbc5793" />
+
 ## g) Bittistä
 
 ## Lähteet:
-Cornelius 2022: Decode 433.92 MHz weather station data. Luettavissa: https://github.karllohner.com/SDR/Decoding/Example_2019-01-24/ Luettu 7.11.2026
+Cornelius 2022: Decode 433.92 MHz weather station data. Luettavissa: https://www.onetransistor.eu/2022/01/decode-433mhz-ask-signal.html Luettu 7.11.2026
 
 Hubacek 2019: Universal Radio Hacker SDR Tutorial on 433 MHz radio plugs. Katsottavissa: https://www.youtube.com/watch?v=sbqMqb6FVMY&t=199s Katsottu 7.11.2026
 

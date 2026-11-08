@@ -46,8 +46,11 @@ rtl_433 -r Converted_433.92M_2000k.cs8
 
 <img width="955" height="806" alt="VirtualBox_Kali_08_11_2026_18_35_44" src="https://github.com/user-attachments/assets/a57b7c98-807e-48ca-bf80-5365606ff3a9" />
 
-Kuvaa analysoimalla näemmä tämän olevan kolmen eri paketin, _KlikAanKlikUit-Switch_, _Proove-Security_ ja _Nexa-Security_ näyttäytyvän useamman kerran. Tulosteessa näkyy jokaisella paketilla oma aikaleimansa ja pakettien väilillä jaetun saman id-numeron.
+Kuvaa analysoimalla näemmä tämän olevan kolmen eri paketin, _KlikAanKlikUit-Switch_, _Proove-Security_ ja _Nexa-Security_ näyttäytyvän useamman kerran. Tulosteessa näkyy jokaisella paketilla oma aikaleimansa ja pakettien väilillä jaetun saman id-numeron. 
+
+Veikkaisin kyseessä olevan jonkinlaisen kameran ja tämän kaukosäätimen, sillä _KlikAanKlikUit-Switch_ tuntuisi viittaavan jonkinlaiseen klikattavaan autosäätimeen ja molemmat _Proove-Securityn_ ja _Nexa-Securityn_ näyttäisivät jakavan nimessään Security-sanan, sekä tiedoissaan _House Code_-osion.
 ## d) Too compex 16?
+
 ## e) Ultimate. Asenna URH, the Ultimate Radio Hacker
 ## f) Yleiskuva
 ## g) Bittistä

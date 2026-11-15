@@ -24,19 +24,13 @@ Rakenteeltaan APDU-komennot ovat seuraavanlaisia:
 
 | CLA - Class Byte  | INS - Instruction Byte | P1 & P2 – Parameter Bytes |
 | ------------- | ------------- | ------------- |
-| CLA kertoo, minkä tyyppiseen komentoluokkaan APDU-komento kuuluu. | INS määrittelee suoritettavan toiminnon eli mitä kortilta pyydetään tekemään | P1 ja P2 ovat komentokohtaisia parametreja, joiden tehtävä on tarkentaa miten annettu komento suoritetaan. |
-| Content Cell  | Content Cell  | Content Cell  |
+| CLA kertoo, minkä tyyppiseen komentoluokkaan APDU-komento kuuluu. | INS määrittelee suoritettavan toiminnon eli mitä kortilta pyydetään tekemään. | P1 ja P2 ovat komentokohtaisia parametreja, joiden tehtävä on tarkentaa miten annettu komento suoritetaan. |
 
-Se voi määrittää esimerkiksi:
-- Komentojen luokan.
-- Käytetäänkö loogista kanavaa.
-- Onko komento osa turvallista viestintää (Secure Messaging).
-- Onko kyseessä tietty protokollakohtainen komentotyyppi.
+Valinnaiset:
 
-
-Esimerkiksi SELECT-komennossa ne voivat määrittää:
-- Millä tavalla tiedosto tai sovellus valitaan.
-- Minkä tyyppistä tunnistetta käytetään valintaan. 
+| LC  – Length of Command Data | Data – Command Data | LE – Expected Response Length |
+| ------------- | ------------- | ------------- |
+| Lc ilmaisee komennon mukana lähetettävän datan pituuden. | Sisältää varsinaisen komennon mukana lähetettävän tiedon. | Ilmaisee, kuinka paljon dataa päätelaite odottaa saavansa kortilta. |
 
 ## c) Tutki ja kerro minkä mielenkiintoisen RFID hakkerointi uutisen löysit. 
 [Linnaan ei pääse enää vanhalla kulkukortilla](https://www.visiirilehti.fi/linnaan-ei-paase-enaa-vanhalla-kulkukortilla)

@@ -20,6 +20,22 @@ APDU on keskeinen käsite älykorttien, SIM-korttien, maksukorttien, NFC-teknolo
 - Command APDU (C-APDU): Päätelaitteen lähettämä komento.
 - Response APDU (R-APDU): Älykortin lähettämä vastaus.
 
+Rakenteeltaan APDU-komennot ovat seuraavanlaisia:
+
+| CLA - Class Byte  | INS - Instruction Byte | P1 & P2 – Parameter Bytes |
+| ------------- | ------------- | ------------- |
+| CLA kertoo, minkä tyyppiseen komentoluokkaan APDU-komento kuuluu.
+
+Se voi määrittää esimerkiksi:
+- Komentojen luokan.
+- Käytetäänkö loogista kanavaa.
+- Onko komento osa turvallista viestintää (Secure Messaging).
+- Onko kyseessä tietty protokollakohtainen komentotyyppi.  | INS määrittelee suoritettavan toiminnon eli mitä kortilta pyydetään tekemään | P1 ja P2 ovat komentokohtaisia parametreja, joiden tehtävä on tarkentaa miten annettu komento suoritetaan.
+
+Esimerkiksi SELECT-komennossa ne voivat määrittää:
+- Millä tavalla tiedosto tai sovellus valitaan.
+- Minkä tyyppistä tunnistetta käytetään valintaan. |
+| Content Cell  | Content Cell  | Content Cell  |
 
 ## c) Tutki ja kerro minkä mielenkiintoisen RFID hakkerointi uutisen löysit. 
 [Linnaan ei pääse enää vanhalla kulkukortilla](https://www.visiirilehti.fi/linnaan-ei-paase-enaa-vanhalla-kulkukortilla)
@@ -34,4 +50,5 @@ Mielestäni artikkeli oli kiinnostava, varsinkin opittuani kuinka helposti rfid-
 
 ## Lähteet:
 Karvinen 2026: Verkkoon tunkeutuminen ja tiedustelu. Luettavissa: https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/ Luettu 15.11.2026
+
 Kiviranta 18.3.2026: Linnaan ei pääse enää vanhalla kulkukortilla, Visiiri. Luettavissa: https://www.visiirilehti.fi/linnaan-ei-paase-enaa-vanhalla-kulkukortilla Luettu 15.11.2026

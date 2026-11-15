@@ -7,11 +7,20 @@ Yleisimpiä käytössäni olevia RFID tuotteita ovat:
 
 - Maksukortti, sekä erilaiset kanta-asiakaskortit
 - Kulkukortti töihin
+- Passi ja henkilökortti
 
-Suojautumisen kannalta pyrin pitämään kulkukorttiani kotona aina kun en sitä tarvitse, ja pitämään tätä usein taskussani sen sijaan, että roikottaisin sitä muiden nähtävillä kaulani ympärillä. Lompakkoni kanssa pyrin myös usein pitämään sen käden ulottuvilla, mutta tämä ei tietenkään suojaa mahdollisilta skannauksilta huomioni ollessa muualla.
+Suojautumisen kannalta pyrin pitämään kulkukorttiani kotona aina kun en sitä tarvitse, ja pitämään tätä usein taskussani sen sijaan, että roikottaisin sitä muiden nähtävillä kaulani ympärillä. Lompakkoni kanssa pyrin myös usein pitämään sen käden ulottuvilla, mutta tämä ei tietenkään suojaa mahdollisilta skannauksilta huomioni ollessa muualla. Vaikka pidänkin henkilökorttiani lompakossa, on passini aina kotona ellen tätä erikseen tarvitse. Puhelintani suojaan pitämällä NFC ominaisuudet kokonaan pois päältä.
 
-Kottieni kanssa voisin suojautua urkinnalta huomattavasti paremmin, hankkimalla esimerkiksi lompakon joka olisi rfid suojattu.
+Korttieni kanssa voisin suojautua urkinnalta huomattavasti paremmin, hankkimalla esimerkiksi lompakon joka olisi rfid suojattu.
 ## b) Tutustu APDU komentojen rakenteeseen (voit käyttää tekoälyä tutustumiseen)
+Tehtävää varten kysyin ChatGPT-6 mallilta seuraavan kysymyksen: _"Voitko kertoa minulle APDU:sta ja APDU komentojen rakenteesta?"_
+
+APDU on keskeinen käsite älykorttien, SIM-korttien, maksukorttien, NFC-teknologian ja erilaisten turvamoduulien kanssa kommunikoitaessa.  Tämä kommunikointi koostuu kahdesta pääosasta:
+
+- Command APDU (C-APDU): Päätelaitteen lähettämä komento.
+- Response APDU (R-APDU): Älykortin lähettämä vastaus.
+
+
 ## c) Tutki ja kerro minkä mielenkiintoisen RFID hakkerointi uutisen löysit. 
 [Linnaan ei pääse enää vanhalla kulkukortilla](https://www.visiirilehti.fi/linnaan-ei-paase-enaa-vanhalla-kulkukortilla)
 

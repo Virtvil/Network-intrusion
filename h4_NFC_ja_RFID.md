@@ -29,7 +29,7 @@ Rakenteeltaan APDU-komennot koostuvat neljästä pakollisesta kentästä ja enin
 
 | LC  – Length of Command Data | Data – Command Data | LE – Expected Response Length |
 | ------------- | ------------- | ------------- |
-| Lc ilmaisee komennon mukana lähetettävän datan pituuden. | Sisältää varsinaisen komennon mukana lähetettävän tiedon. | Ilmaisee, kuinka paljon dataa päätelaite odottaa saavansa kortilta. |
+| LC ilmaisee komennon mukana lähetettävän datan pituuden. | Sisältää varsinaisen komennon mukana lähetettävän tiedon. | Ilmaisee, kuinka paljon dataa päätelaite odottaa saavansa kortilta. |
 
 Käytännön esimerkkinä ChatGPT esitti minulle seuraavanlaisen SELECT-komennon:
 

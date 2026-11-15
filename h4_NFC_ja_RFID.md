@@ -1,4 +1,4 @@
-# h4 - NFC ja RFID
+# h4 NFC ja RFID
 - Kurssi: Verkkoon tunkeutuminen ja tiedustelu (Karvinen 2026)
 - Opettaja: Tero Karvinen & Lari Iso-Anttila
 - Raportin kirjoittaja: Vili Virtanen

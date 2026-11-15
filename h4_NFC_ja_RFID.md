@@ -15,18 +15,17 @@ Korttieni kanssa voisin suojautua urkinnalta huomattavasti paremmin, hankkimalla
 ## b) Tutustu APDU komentojen rakenteeseen (voit käyttää tekoälyä tutustumiseen)
 Tehtävää varten kysyin ChatGPT-6 mallilta seuraavan kysymyksen: _"Voitko kertoa minulle APDU:sta ja APDU komentojen rakenteesta?"_
 
-APDU on keskeinen käsite älykorttien, SIM-korttien, maksukorttien, NFC-teknologian ja erilaisten turvamoduulien kanssa kommunikoitaessa.  Tämä kommunikointi koostuu kahdesta pääosasta:
+APDU on keskeinen käsite älykorttien, SIM-korttien, maksukorttien, NFC-teknologian ja erilaisten turvamoduulien kanssa kommunikoitaessa.  
 
-- Command APDU (C-APDU): Päätelaitteen lähettämä komento.
-- Response APDU (R-APDU): Älykortin lähettämä vastaus.
+Rakenteeltaan APDU-komennot koostuvat neljästä pakollisesta kentästä ja enintään kahdesta valinnaisesta kentästä:
 
-Rakenteeltaan APDU-komennot ovat seuraavanlaisia:
+### Pakolliset:
 
 | CLA - Class Byte  | INS - Instruction Byte | P1 & P2 – Parameter Bytes |
 | ------------- | ------------- | ------------- |
 | CLA kertoo, minkä tyyppiseen komentoluokkaan APDU-komento kuuluu. | INS määrittelee suoritettavan toiminnon eli mitä kortilta pyydetään tekemään. | P1 ja P2 ovat komentokohtaisia parametreja, joiden tehtävä on tarkentaa miten annettu komento suoritetaan. |
 
-Valinnaiset:
+### Valinnaiset:
 
 | LC  – Length of Command Data | Data – Command Data | LE – Expected Response Length |
 | ------------- | ------------- | ------------- |

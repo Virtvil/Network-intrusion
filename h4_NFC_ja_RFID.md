@@ -32,6 +32,25 @@ Valinnaiset:
 | ------------- | ------------- | ------------- |
 | Lc ilmaisee komennon mukana lähetettävän datan pituuden. | Sisältää varsinaisen komennon mukana lähetettävän tiedon. | Ilmaisee, kuinka paljon dataa päätelaite odottaa saavansa kortilta. |
 
+Käytännön esimerkkinä ChatGPT esitti minulle seuraavanlaisen SELECT-komennon:
+
+```
+00 A4 04 00 07 A0 00 00 00 03 10 10 00
+```
+
+Avataampas komentoa:
+
+| Kenttä | Arvo | Selitys |
+| ------------- | ------------- | ------------- |
+| CLA | 00 | Komentoluokka. |
+| INS | A4 | SELECT. |
+| P1 | 04 | Valitse DF AID:n perusteella |
+| P2 | 00 | Valintaparametri |
+| LC | 07 | 7 datatavua. |
+| DATA | A0000000031010 | AID-tunniste. |
+| LE | 00 | Lyhyessä muodossa, enintään 256 tavua. |
+
+Tarkistin myös tekoälyn minulle antamat tiedot CardLogix-sivuston [Application Protocol Data Unit (APDU)](https://www.cardlogix.com/glossary/apdu-application-protocol-data-unit-smart-card/)-artikkelista.
 ## c) Tutki ja kerro minkä mielenkiintoisen RFID hakkerointi uutisen löysit. 
 [Linnaan ei pääse enää vanhalla kulkukortilla](https://www.visiirilehti.fi/linnaan-ei-paase-enaa-vanhalla-kulkukortilla)
 
@@ -44,6 +63,8 @@ Uudistuksista ja painotuksesta digitaalisen sovelluksen turvallisuuteen huolimat
 Mielestäni artikkeli oli kiinnostava, varsinkin opittuani kuinka helposti rfid-pohjaiset kortit ovat jäljennettävissä. Siirtyessä älylaitteisiin olisi turvallisuus oletattavasti myös parempaa, mahdollisen salatun liikenteen avulla.
 
 ## Lähteet:
+CardLogix s.a: Application Protocol Data Unit (APDU). Luettavissa: https://www.cardlogix.com/glossary/apdu-application-protocol-data-unit-smart-card/ Luettu: 15.11.2026
+
 Karvinen 2026: Verkkoon tunkeutuminen ja tiedustelu. Luettavissa: https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/ Luettu 15.11.2026
 
 Kiviranta 18.3.2026: Linnaan ei pääse enää vanhalla kulkukortilla, Visiiri. Luettavissa: https://www.visiirilehti.fi/linnaan-ei-paase-enaa-vanhalla-kulkukortilla Luettu 15.11.2026

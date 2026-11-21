@@ -22,7 +22,11 @@ Seuraavaksi tarkistin Mininet-laitteen ip-osoitteen ```ip a```-komennolla, ja lo
 
 Ryhdyin luomaan verkko-ohjaimella yhteyttä komennolla ```ryu-manager ryu.app.simple_switch_13``` ja jätin tämän taustalle pyörimaan, avaten toisen ikkunan, jolla otin myös yhteyden mininet-koneeseen. Toisella ikkunalla käytin komentoa ```sudo mn --topo single,3 --mac --switch ovsk --controller remote```.
 
-Komennon tarkoituksena on INSERT TARKOITUS TÄHÄN!!!
+Komennon rakenne:
+
+| sudo mn  | --topo single, 3 | --mac | --switch ovsk | --controller remote |
+| ------------- | ------------- | ------------- | ------------- |------------- |
+| Antaa sudo oikeudet mininettiin | Yksinkertainen topologia, 1 kytkin, 3 laitetta | Mac osoitteet | virtuaalikytkimen tyyppi (Open v switch kernel) | Mininetin perusohjain |
 
 <img width="1920" height="652" alt="VirtualBox_Kali_21_11_2026_22_29_02" src="https://github.com/user-attachments/assets/4717c3c2-97c7-4a2d-92e7-3a5715572dc2" />
 

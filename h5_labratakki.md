@@ -36,10 +36,21 @@ Käyttäessäni ```xterm```-komentoa sainkin kielteisen vastauksen väärän aut
 
 Saadakseni oikeat autentikaatiot poistuin ```exit```-komennolla ja käytin komentoa ```./get_xauth.sh``` joka antoi tulosteen ```mininet-vm/unix:13  MIT-MAGIC-COOKIE-1  85c664a665a6c92b76121ecd48468fbe
 ```. Tämän alkuun lisäämällä ```sudo -s xauth add``` pystyn antamaan itselleni tarvitun autentikaation! Lopullinen käytetty komento on siis muotoa: 
-```sudo -s xauth add mininet-vm/unix:13  MIT-MAGIC-COOKIE-1  85c664a665a6c92b76121ecd48468fbe
+
+```
+sudo -s xauth add mininet-vm/unix:13  MIT-MAGIC-COOKIE-1  85c664a665a6c92b76121ecd48468fbe
 ```
 
+Jonka jälkeen ```xterm```-komentomme toimii!
+
 <img width="895" height="77" alt="VirtualBox_Kali_21_11_2026_22_40_32" src="https://github.com/user-attachments/assets/e0f701e4-8055-4466-859f-95c0a7c78ffb" />
+
+(Kuvassa eri autentikaatio kuin lopullisessa komennossa, sillä Kali-laitteeni hyytyi välissä ja jouduin aloittamaan tehtävän alusta)
+
+<img width="955" height="82" alt="VirtualBox_Kali_21_11_2026_22_51_33" src="https://github.com/user-attachments/assets/858bbc00-6e3a-46c6-87f8-52f577ebbbfd" />
+
+<img width="933" height="498" alt="VirtualBox_Kali_21_11_2026_22_52_12" src="https://github.com/user-attachments/assets/9996c973-70bc-4ec5-8a20-e806d41081cb" />
+
 
 ## b) Samassa hakemistossa on myös ICMP Spoofing ja TCP Session Hijacking. Aja molemmat labrat läpi ja kerro, miten molemmat tekniikat toimivat.
 ## c) Hakemistossa 02-SDN-DDos_Simulation tryout-kansiossa on työkalut, jotta voit ajaa TCP SYN-Flood-hyökkäyksen turvallisesti. Kirjoita, miten ajoit hyökkäyksen ja miten kyseinen hyökkäys toimii.

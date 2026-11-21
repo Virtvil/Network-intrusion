@@ -73,9 +73,15 @@ Joista viimeisin avasi wiresharkin, jolla pystyn kaappaamaan liikennettä _h3-th
 
 <img width="1767" height="808" alt="VirtualBox_Kali_21_11_2026_22_59_09" src="https://github.com/user-attachments/assets/afe7733f-1bb9-4968-b9cc-702df3fe9c5d" />
 
+Seuraavaksi komennolla ```sshesame -port 22 -listen_address 0.0.0.0``` saamme _h3_-terminaalimme kuuntelemaan kaapattua yhteyttä. Syöttääksemme arp-myrkytyksen avataan uusi _h3_-terminaali ```xterm h3```-komennolla ja käynnistetään myrkytys komennolla ```python3 ./arp_poison.py```.
+
 <img width="767" height="338" alt="VirtualBox_Kali_21_11_2026_23_02_24" src="https://github.com/user-attachments/assets/5266525c-b5ee-4f72-a366-8c7bbdd49a2e" />
 
+Näemme heti liikennettä Wiresharkissa, jossa käynnistetty komento kyselee jatkuvasti APR-kyselyitä.
+
 <img width="1170" height="588" alt="VirtualBox_Kali_21_11_2026_23_03_46" src="https://github.com/user-attachments/assets/c760cac9-fc1d-4b13-bf38-15fcda689538" />
+
+Kokeillaan seuraavaksi yhdistää _h2_-terminaaliin käyttäen _h1_-terminaalia.
 
 <img width="955" height="454" alt="VirtualBox_Kali_21_11_2026_23_05_23" src="https://github.com/user-attachments/assets/88861af0-8ef6-462d-bd58-30959958b3b2" />
 

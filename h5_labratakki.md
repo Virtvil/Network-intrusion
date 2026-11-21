@@ -3,7 +3,7 @@
 - Opettaja: Tero Karvinen & Lari Iso-Anttila
 - Raportin kirjoittaja: Vili Virtanen
 ## a) Aja tunnilla esitetty ARP hyökkäys ja tutki, miten se toimii.
-Aloitin lataamalla tunnilla jaetun mininet-virtuaalikoneen ja purin ladatun tiedoston käyttäen WinRar. Mininet-koneen voi tuoda VirtualBox ympäristöön luomalla uuden virtuaalikoneen, käyttäen ```Linux OS``` ja ```Ubuntu OS Distribution```. Tämän jälkeen valitsemalla ```Specify virtual hard disk``` voimme valita juuri purkamamme mininet-virtuaalikoneen ja tämän ```Student-lab.vmdk``` version. HUOM! EI FLAT-VERSIOTA!
+Aloitin lataamalla tunnilla jaetun mininet-virtuaalikoneen ja purin ladatun tiedoston käyttäen WinRar. Mininet-koneen voi tuoda VirtualBox ympäristöön luomalla uuden virtuaalikoneen, käyttäen ```Linux OS``` ja ```Ubuntu OS Distribution```. Tämän jälkeen suuntaamalla ```Specify virtual hard disk``` voimme valita ```Use An Existing Virtual Hard Disk```-osioon juuri purkamamme mininet-virtuaalikoneen ja tämän ```Student-lab.vmdk``` version. HUOM! EI FLAT-VERSIOTA!
 
 <img width="990" height="682" alt="Näyttökuva 2026-11-21 174458" src="https://github.com/user-attachments/assets/7b8a5d0e-6a37-470b-9ae6-ec9fb559ea81" />
 

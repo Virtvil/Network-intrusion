@@ -1,4 +1,4 @@
-<img width="702" height="377" alt="image" src="https://github.com/user-attachments/assets/cfebc3c6-2b29-46fd-87ee-e063bf5d67e1" /># h5 Labratakki
+# h5 Labratakki
 - Kurssi: Verkkoon tunkeutuminen ja tiedustelu (Karvinen 2026)
 - Opettaja: Tero Karvinen & Lari Iso-Anttila
 - Raportin kirjoittaja: Vili Virtanen
@@ -41,15 +41,35 @@ Saadakseni oikeat autentikaatiot poistuin ```exit```-komennolla ja käytin komen
 sudo -s xauth add mininet-vm/unix:13  MIT-MAGIC-COOKIE-1  85c664a665a6c92b76121ecd48468fbe
 ```
 
-Jonka jälkeen ```xterm```-komentomme toimii!
-
 <img width="895" height="77" alt="VirtualBox_Kali_21_11_2026_22_40_32" src="https://github.com/user-attachments/assets/e0f701e4-8055-4466-859f-95c0a7c78ffb" />
 
 (Kuvassa eri autentikaatio kuin lopullisessa komennossa, sillä Kali-laitteeni hyytyi välissä ja jouduin aloittamaan tehtävän alusta)
 
 <img width="955" height="82" alt="VirtualBox_Kali_21_11_2026_22_51_33" src="https://github.com/user-attachments/assets/858bbc00-6e3a-46c6-87f8-52f577ebbbfd" />
 
+Jonka jälkeen ```xterm```-komentomme toimii!
+
 <img width="933" height="498" alt="VirtualBox_Kali_21_11_2026_22_52_12" src="https://github.com/user-attachments/assets/9996c973-70bc-4ec5-8a20-e806d41081cb" />
+
+Seuraavaksi avasin kaikki kolme ikkunaa (_h1, h2 ja h3_) ja syötin h3-terminaaliin komennot:
+
+```
+sysctl -w net.ipv4.ip_forward=1 
+```
+
+```
+iptables -t nat -A PREROUTING -p tcp --dport 22 -j REDIRECT --to-port 22
+```
+
+```
+tcpdump –i h3-eth0 –w arp-p.pcap &
+```
+
+```
+wireshark &
+```
+
+Joista viimeisin avasi wiresharkin, jolla pystyn kaappaamaan liikennettä _h3-th0_-kohteesta.
 
 <img width="1767" height="808" alt="VirtualBox_Kali_21_11_2026_22_59_09" src="https://github.com/user-attachments/assets/afe7733f-1bb9-4968-b9cc-702df3fe9c5d" />
 

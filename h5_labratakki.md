@@ -89,11 +89,23 @@ Kokeillaan seuraavaksi yhdistää _h2_-terminaaliin käyttäen _h1_-terminaalia.
 
 <img width="955" height="454" alt="VirtualBox_Kali_21_11_2026_23_05_23" src="https://github.com/user-attachments/assets/88861af0-8ef6-462d-bd58-30959958b3b2" />
 
+Emme saa yhteyttä, sillä ssh näkee identifikaation ja julkisen avaimen muuttuneen ja estää yhteyden. Pystymme poistamaan julkisen avaimen _h2_-terminaaliin komennolla:
+
+```
+ssh-keygen –R h2
+```
+
 <img width="885" height="115" alt="VirtualBox_Kali_21_11_2026_23_08_44(2)" src="https://github.com/user-attachments/assets/75d42708-ee02-4050-9831-df7911073024" />
+
+Yritetään muodostaa yhteys uudelleen:
 
 <img width="621" height="151" alt="VirtualBox_Kali_21_11_2026_23_08_44" src="https://github.com/user-attachments/assets/09a40842-cbc2-4398-acf5-f2fb819ee04e" />
 
+Yhteys onnistuu ja _h3_-terminaali, jonka asetimme aiemmin kuuntelemaan liikennettä, on tallentanut tapahtuman:
+
 <img width="769" height="358" alt="VirtualBox_Kali_21_11_2026_23_09_03" src="https://github.com/user-attachments/assets/8304fa5f-3519-4568-bffe-46e84a180efa" />
+
+Näemme myös muutokset Wiresharkissa:
 
 <img width="955" height="507" alt="VirtualBox_Kali_21_11_2026_23_09_31" src="https://github.com/user-attachments/assets/27971c35-612f-4527-8c16-6bb911586309" />
 

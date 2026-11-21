@@ -1,4 +1,4 @@
-# h5 Labratakki
+<img width="702" height="377" alt="image" src="https://github.com/user-attachments/assets/cfebc3c6-2b29-46fd-87ee-e063bf5d67e1" /># h5 Labratakki
 - Kurssi: Verkkoon tunkeutuminen ja tiedustelu (Karvinen 2026)
 - Opettaja: Tero Karvinen & Lari Iso-Anttila
 - Raportin kirjoittaja: Vili Virtanen
@@ -10,6 +10,22 @@ Aloitin lataamalla tunnilla jaetun mininet-virtuaalikoneen ja purin ladatun tied
 <img width="986" height="681" alt="Näyttökuva 2026-11-21 174122" src="https://github.com/user-attachments/assets/63e269b2-fd9a-4efc-ae21-b6f0d2022dd5" />
 
 ## a) Aja tunnilla esitetty ARP hyökkäys ja tutki, miten se toimii.
+Aloitin tehtävän todeten, että tämä olisi huomattavasti helpompi tehdä Kali-koneeltani käyttäen ssh-yhteyttä mininet laitteelle. Valitettavasti olin päivittänyt ohjelmistoani hiljattain, eikä Kali-laitteeni suostunut käynnistymään graafisessa käyttöliittymässä. Tarkistin virtuaalikoneen logitiedostot ```Machine>Show Log``` avulla ja minulle selvisi, että graafinen liittymä ei tosiaankaan suostunut käynnistymään. Kyselinkin tässä vaiheessa apua ChatGptltä, joka neuvoi minua avaamaan Kali-laitteeni komentoliittymän käyttämällä ```ctr+alt+f2```, jonka avulla pystyin poistamaan tiedostoja laitteen Downloads-kansiosta ja pääsin kunnolla tehtävän kimppuun.
+
+Ryhdyin aluksi yhdistämään koneiden verkko-adaptereita suuntaamalla VirtualBoxin asetuksiin ja asettamalla molemmille laitteille Host-only Adapterin.
+
+<img width="702" height="377" alt="Näyttökuva 2026-11-21 222018" src="https://github.com/user-attachments/assets/217319bc-5949-469c-8cde-1219d319d6ee" />
+
+Seuraavaksi tarkistin Mininet-laitteen ip-osoitteen ```ip a```-komennolla, ja loin yhteyden laitteiden välille komennolla ```ssh -X mininet@192.168.56.105```.
+
+<img width="714" height="365" alt="VirtualBox_Kali_21_11_2026_22_24_02" src="https://github.com/user-attachments/assets/e67ef361-cd88-4137-be2c-bfb45836086c" />
+
+Ryhdyin luomaan verkko-ohjaimella yhteyttä komennolla ```ryu-manager ryu.app.simple_switch_13``` ja jätin tämän taustalle pyörimaan, avaten toisen ikkunan, jolla otin myös yhteyden mininet-koneeseen. Toisella ikkunalla käytin komentoa ```sudo mn --topo single,3 --mac --switch ovsk --controller remote```.
+
+Komennon tarkoituksena on INSERT TARKOITUS TÄHÄN!!!
+
+<img width="1920" height="652" alt="VirtualBox_Kali_21_11_2026_22_29_02" src="https://github.com/user-attachments/assets/4717c3c2-97c7-4a2d-92e7-3a5715572dc2" />
+
 ## b) Samassa hakemistossa on myös ICMP Spoofing ja TCP Session Hijacking. Aja molemmat labrat läpi ja kerro, miten molemmat tekniikat toimivat.
 ## c) Hakemistossa 02-SDN-DDos_Simulation tryout-kansiossa on työkalut, jotta voit ajaa TCP SYN-Flood-hyökkäyksen turvallisesti. Kirjoita, miten ajoit hyökkäyksen ja miten kyseinen hyökkäys toimii.
 ## Lähteet:

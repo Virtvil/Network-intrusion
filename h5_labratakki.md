@@ -51,6 +51,22 @@ Jonka jälkeen ```xterm```-komentomme toimii!
 
 <img width="933" height="498" alt="VirtualBox_Kali_21_11_2026_22_52_12" src="https://github.com/user-attachments/assets/9996c973-70bc-4ec5-8a20-e806d41081cb" />
 
+<img width="1767" height="808" alt="VirtualBox_Kali_21_11_2026_22_59_09" src="https://github.com/user-attachments/assets/afe7733f-1bb9-4968-b9cc-702df3fe9c5d" />
+
+<img width="767" height="338" alt="VirtualBox_Kali_21_11_2026_23_02_24" src="https://github.com/user-attachments/assets/5266525c-b5ee-4f72-a366-8c7bbdd49a2e" />
+
+<img width="1170" height="588" alt="VirtualBox_Kali_21_11_2026_23_03_46" src="https://github.com/user-attachments/assets/c760cac9-fc1d-4b13-bf38-15fcda689538" />
+
+<img width="955" height="454" alt="VirtualBox_Kali_21_11_2026_23_05_23" src="https://github.com/user-attachments/assets/88861af0-8ef6-462d-bd58-30959958b3b2" />
+
+<img width="885" height="115" alt="VirtualBox_Kali_21_11_2026_23_08_44(2)" src="https://github.com/user-attachments/assets/75d42708-ee02-4050-9831-df7911073024" />
+
+<img width="621" height="151" alt="VirtualBox_Kali_21_11_2026_23_08_44" src="https://github.com/user-attachments/assets/09a40842-cbc2-4398-acf5-f2fb819ee04e" />
+
+<img width="769" height="358" alt="VirtualBox_Kali_21_11_2026_23_09_03" src="https://github.com/user-attachments/assets/8304fa5f-3519-4568-bffe-46e84a180efa" />
+
+<img width="955" height="507" alt="VirtualBox_Kali_21_11_2026_23_09_31" src="https://github.com/user-attachments/assets/27971c35-612f-4527-8c16-6bb911586309" />
+
 
 ## b) Samassa hakemistossa on myös ICMP Spoofing ja TCP Session Hijacking. Aja molemmat labrat läpi ja kerro, miten molemmat tekniikat toimivat.
 ## c) Hakemistossa 02-SDN-DDos_Simulation tryout-kansiossa on työkalut, jotta voit ajaa TCP SYN-Flood-hyökkäyksen turvallisesti. Kirjoita, miten ajoit hyökkäyksen ja miten kyseinen hyökkäys toimii.

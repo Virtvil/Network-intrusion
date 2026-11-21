@@ -26,6 +26,21 @@ Komennon tarkoituksena on INSERT TARKOITUS TÄHÄN!!!
 
 <img width="1920" height="652" alt="VirtualBox_Kali_21_11_2026_22_29_02" src="https://github.com/user-attachments/assets/4717c3c2-97c7-4a2d-92e7-3a5715572dc2" />
 
+Käytin tehtävänannon ```pingall```-komentoa ja näinkin kuinka paketit pingaantuivat toisella ruudulla, vaikka näissä ei oikein tietoja ollutkaan.
+
+<img width="1641" height="374" alt="VirtualBox_Kali_21_11_2026_22_31_58" src="https://github.com/user-attachments/assets/93177846-05aa-4a54-b661-4aa59b5cb683" />
+
+Käyttäessäni ```xterm```-komentoa sainkin kielteisen vastauksen väärän autentikaation takia.
+
+<img width="582" height="106" alt="VirtualBox_Kali_21_11_2026_22_37_21" src="https://github.com/user-attachments/assets/b1e662b2-82ad-41c3-9e0c-c64ac9c866de" />
+
+Saadakseni oikeat autentikaatiot poistuin ```exit```-komennolla ja käytin komentoa ```./get_xauth.sh``` joka antoi tulosteen ```mininet-vm/unix:13  MIT-MAGIC-COOKIE-1  85c664a665a6c92b76121ecd48468fbe
+```. Tämän alkuun lisäämällä ```sudo -s xauth add``` pystyn antamaan itselleni tarvitun autentikaation! Lopullinen käytetty komento on siis muotoa: 
+```sudo -s xauth add mininet-vm/unix:13  MIT-MAGIC-COOKIE-1  85c664a665a6c92b76121ecd48468fbe
+```
+
+<img width="895" height="77" alt="VirtualBox_Kali_21_11_2026_22_40_32" src="https://github.com/user-attachments/assets/e0f701e4-8055-4466-859f-95c0a7c78ffb" />
+
 ## b) Samassa hakemistossa on myös ICMP Spoofing ja TCP Session Hijacking. Aja molemmat labrat läpi ja kerro, miten molemmat tekniikat toimivat.
 ## c) Hakemistossa 02-SDN-DDos_Simulation tryout-kansiossa on työkalut, jotta voit ajaa TCP SYN-Flood-hyökkäyksen turvallisesti. Kirjoita, miten ajoit hyökkäyksen ja miten kyseinen hyökkäys toimii.
 ## Lähteet:

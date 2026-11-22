@@ -142,10 +142,18 @@ Nyt ajamalla aiemman ```sudo python3 hub_topo.py```-komennon pystyin luomaan its
 
 <img width="955" height="703" alt="VirtualBox_Kali_22_11_2026_15_07_24" src="https://github.com/user-attachments/assets/6b928505-ae5d-492a-bf40-b58330be23e9" />
 
+Verkkoon ilmestyy lisää paketteja, joilla on väärennettyjä lähdeosoitteita ja jotka tämän vuoksi näyttävät tulevan oikeasta osoitteesta.
 ### TCP Session Hijacking
+Seuraava tehtävä suoritetaan samassa labrassa, vaihdetaan vain terminaalit uusiin. ```xterm```-komennolla _h1_, _h2_, _h3_ terminaalit pyörimään ja ajetaan terminaaleilla seuraavat komennot:
+
+- _H1_-terminaaliin ```python tcp_server.py```, joka kuuntelee taustalla.
+- _H2_-terminaaliin ```python tcp_client.py``` jolla muodostamme yhteyden.
+- _H3_-terminaaliin ```python sniff_tcp_session.py```, joka kuuntelee ("sniffaa") liikennettä.
+- Avataan tämän lisäksi vielä toinen _h3_-terminaali, koska aiempi terminaalimme kuuntelee liikennettä, johon laitamme ```python tcp_hijack.py```-komennon. Komento syöttää väärennettyjä paketteja istuntoon.
 
 <img width="955" height="678" alt="VirtualBox_Kali_22_11_2026_15_24_16" src="https://github.com/user-attachments/assets/709eab18-7a19-4a0b-a40b-574718fe62c7" />
 
+Näemme syötteessä aktiiviseen yhteyteen ilmestyvän lisää paketteja!
 ## c) Hakemistossa 02-SDN-DDos_Simulation tryout-kansiossa on työkalut, jotta voit ajaa TCP SYN-Flood-hyökkäyksen turvallisesti. Kirjoita, miten ajoit hyökkäyksen ja miten kyseinen hyökkäys toimii.
 ## Lähteet:
 Karvinen 2026: Verkkoon tunkeutuminen ja tiedustelu. Luettavissa: https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/ Luettu 21.11.2026

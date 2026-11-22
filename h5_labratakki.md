@@ -109,8 +109,30 @@ Näemme myös muutokset Wiresharkissa:
 
 <img width="955" height="507" alt="VirtualBox_Kali_21_11_2026_23_09_31" src="https://github.com/user-attachments/assets/27971c35-612f-4527-8c16-6bb911586309" />
 
-
+Harjoituksen ideana on lähettää _h3_-terminaalilla toistuvia ARP-vastauksia, jossa se tämä väittää omaavansa harjoituksen _h1_ ja _h2_-laitteiden IP-osoitteet. Hyökkäyksessä siis lähetetään väärennettyjä ARP-vastauksia joiden kautta kohdekone päätyy väärään IP-/MAC-osoitteeseen. Tällöin kohdekoneen likenne päätyy hyökkääjälle, eikä alkuperäiselle kohteelle.
 ## b) Samassa hakemistossa on myös ICMP Spoofing ja TCP Session Hijacking. Aja molemmat labrat läpi ja kerro, miten molemmat tekniikat toimivat.
+### ICMP Spoofing
+Suljin aiemman tehtävän xterm-terminaalit ja siirryin mininet koneella kohteeseen /lab/01_Network-Security-Lab/scripts, jossa pääsin tehtävään käsiksi komennolla ```sudo python3 hub_topo.py```. Törmäsin jälleen kerran ongelmaan autentikoinnin kanssa ja ChatGPT:ltä kysellessä sain ehdotukseksi valtuuksien selvittämiseen ```xauth list```-komennon.
+
+<img width="955" height="409" alt="VirtualBox_Kali_22_11_2026_14_58_18" src="https://github.com/user-attachments/assets/da3e0b3f-d5af-432e-ae6c-00f94d2a4b90" />
+
+Komennon avulla sainkin autentikaatiot tietooni, ja pystyin lisäämään ne itselleni aiemmasta tehtävästä tutuilla ```sudo xauth add```-komennoilla:
+```
+sudo xauth add mininet-vm/unix:11  MIT-MAGIC-COOKIE-1  d7dc501e8619120c5a1b3b8fef974b1b
+```
+```
+sudo xauth add mininet-vm/unix:12  MIT-MAGIC-COOKIE-1  c075527a6cbd3011f2406a9ae4a66a3c
+```
+```
+sudo xauth add mininet-vm/unix:13  MIT-MAGIC-COOKIE-1  85c664a665a6c92b76121ecd48468fbe
+```
+```
+sudo xauth add mininet-vm/unix:10  MIT-MAGIC-COOKIE-1  a8c3eabb4d12fdbecf5ad23fb32b3813
+```
+
+<img width="955" height="277" alt="VirtualBox_Kali_22_11_2026_15_02_51" src="https://github.com/user-attachments/assets/600a6881-bfce-4287-a180-d99cc7a3cf06" />
+
+### TCP Session Hijacking
 ## c) Hakemistossa 02-SDN-DDos_Simulation tryout-kansiossa on työkalut, jotta voit ajaa TCP SYN-Flood-hyökkäyksen turvallisesti. Kirjoita, miten ajoit hyökkäyksen ja miten kyseinen hyökkäys toimii.
 ## Lähteet:
 Karvinen 2026: Verkkoon tunkeutuminen ja tiedustelu. Luettavissa: https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/ Luettu 21.11.2026

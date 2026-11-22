@@ -155,5 +155,11 @@ Seuraava tehtävä suoritetaan samassa labrassa, vaihdetaan vain terminaalit uus
 
 Näemme syötteessä aktiiviseen yhteyteen ilmestyvän lisää paketteja!
 ## c) Hakemistossa 02-SDN-DDos_Simulation tryout-kansiossa on työkalut, jotta voit ajaa TCP SYN-Flood-hyökkäyksen turvallisesti. Kirjoita, miten ajoit hyökkäyksen ja miten kyseinen hyökkäys toimii.
+
 ## Lähteet:
+DDoS Simulation in a Software Defined Network, README. Luettavissa: https://github.com/santhisenan/SDN_DDoS_Simulation?tab=readme-ov-file Luettu 22.11.2026
+
+
 Karvinen 2026: Verkkoon tunkeutuminen ja tiedustelu. Luettavissa: https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/ Luettu 21.11.2026
+
+Network-Security-Lab, README. Luettavissa: https://github.com/ssam246/Network-Security-Lab Luettu: 22.11.2026

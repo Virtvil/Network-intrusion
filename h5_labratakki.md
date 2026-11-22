@@ -139,7 +139,7 @@ Nyt ajamalla aiemman ```sudo python3 hub_topo.py```-komennon pystyin luomaan its
 - _H1_-terminaalissa ajetaan komento ```python3 sniff_icmp.py```, joka kuuntelee liikennettä.
 - _H2_-terminaalissa lähetetään ```ping 10.0.0.1``` komento.
 - _H3_-terminaalissa käytetään komentoa ```python spoof_icmp.py```, joka lähettää ylimääräisiä ICMP-paketteja.
-- 
+
 <img width="955" height="703" alt="VirtualBox_Kali_22_11_2026_15_07_24" src="https://github.com/user-attachments/assets/6b928505-ae5d-492a-bf40-b58330be23e9" />
 
 ### TCP Session Hijacking

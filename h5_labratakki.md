@@ -163,11 +163,21 @@ Ajoin ensimmäisessä terminaalissa komennon ```sudo python3 simple_tree_top.py`
 
 <img width="744" height="416" alt="VirtualBox_Kali_22_11_2026_22_21_05" src="https://github.com/user-attachments/assets/9049e9eb-aa22-4f3b-95ae-e796ee809200" />
 
-Hyökkäys näytti tekevän noin 99 toistoa ennen lopettamista.
+Hyökkäys näytti tekevän noin 99 toistoa, tai _episodia_ ennen lopettamista. Jokainen näistä episodeista koostui hostin hyökkäyksestä ja toisen hostin normaalin liikenteen lähettämisestä.
 
 <img width="640" height="161" alt="VirtualBox_Kali_22_11_2026_22_36_41" src="https://github.com/user-attachments/assets/7acc339f-67c2-4f19-9dba-9af502d022f4" />
 
+Lähdin etsimään lisätietoa SYN flood hyökkäyksistä. Hyökkäys koostuu kolmivaiheisen kättelyn hyväksikäytöstä. Normaalisti kättely koostuu jotakuinkin näin:
+
+- SYN = Pyyntö yhdistää kohteeseen
+- SYN-ACK = Vastaus kohteesta, jokaiseen vastaansaatuun pyyntöön. Jättää usein avoimen portin.
+- ACK = Vastaus vastaukselle, yhdistää kohteeseen.
+
+SYN flood hyökkäyksessä kättely jätetään tahallisesti kesken toisessa vaiheessa, jolloin yhteys jää avoimeksi.Hyökkäyksessä jokainen lähetetty pyyntö jättää kohteelle hetkeksi auki portin ja näitä sataessa useita kappaleita kohteen porttien jäädessä auki lopettaa tämä toimintansa. Hyokkäys on siis hieman kuin DDoS-hyökkäys jossa kasataan hyökkäyksiä, sekä normaaleja pyyntöjä, kuormittaen kohteen.
+
 ## Lähteet:
+Cloudflare, SYN flood attack. Luettavissa: https://www.cloudflare.com/learning/ddos/syn-flood-ddos-attack/ Luettu 22.11.2026
+
 DDoS Simulation in a Software Defined Network, README. Luettavissa: https://github.com/santhisenan/SDN_DDoS_Simulation?tab=readme-ov-file Luettu 22.11.2026
 
 Karvinen 2026: Verkkoon tunkeutuminen ja tiedustelu. Luettavissa: https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/ Luettu 21.11.2026

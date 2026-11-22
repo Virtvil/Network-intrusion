@@ -155,10 +155,20 @@ Seuraava tehtävä suoritetaan samassa labrassa, vaihdetaan vain terminaalit uus
 
 Näemme syötteessä aktiiviseen yhteyteen ilmestyvän lisää paketteja!
 ## c) Hakemistossa 02-SDN-DDos_Simulation tryout-kansiossa on työkalut, jotta voit ajaa TCP SYN-Flood-hyökkäyksen turvallisesti. Kirjoita, miten ajoit hyökkäyksen ja miten kyseinen hyökkäys toimii.
+Siirryin mininetillä kansioon _02-SDN-DDos_Simulation tryout_, avaten ohjeiden mukaisesti itselleni myös toisen terminaalin, navigoiden samaiseen hakemistoon.
+
+Ajoin ensimmäisessä terminaalissa komennon ```sudo python3 simple_tree_top.py``` ja toisessa terminaalissa ```ryu-manager main.py```. Jälkimmäinen komento näytti virheviestejä, mutta hyökkäys lähti silti käyntiin.
+
+<img width="955" height="407" alt="VirtualBox_Kali_22_11_2026_22_32_45" src="https://github.com/user-attachments/assets/d3ee8bc2-7511-4071-b5b0-350aaf0ca28f" />
+
+<img width="744" height="416" alt="VirtualBox_Kali_22_11_2026_22_21_05" src="https://github.com/user-attachments/assets/9049e9eb-aa22-4f3b-95ae-e796ee809200" />
+
+Hyökkäys näytti tekevän noin 99 toistoa ennen lopettamista.
+
+<img width="640" height="161" alt="VirtualBox_Kali_22_11_2026_22_36_41" src="https://github.com/user-attachments/assets/7acc339f-67c2-4f19-9dba-9af502d022f4" />
 
 ## Lähteet:
 DDoS Simulation in a Software Defined Network, README. Luettavissa: https://github.com/santhisenan/SDN_DDoS_Simulation?tab=readme-ov-file Luettu 22.11.2026
-
 
 Karvinen 2026: Verkkoon tunkeutuminen ja tiedustelu. Luettavissa: https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/ Luettu 21.11.2026
 

@@ -132,7 +132,20 @@ sudo xauth add mininet-vm/unix:10  MIT-MAGIC-COOKIE-1  a8c3eabb4d12fdbecf5ad23fb
 
 <img width="955" height="277" alt="VirtualBox_Kali_22_11_2026_15_02_51" src="https://github.com/user-attachments/assets/600a6881-bfce-4287-a180-d99cc7a3cf06" />
 
+Nyt ajamalla aiemman ```sudo python3 hub_topo.py```-komennon pystyin luomaan itselleni terminaalit ```xterm```-komennoilla.
+
+<img width="1223" height="727" alt="VirtualBox_Kali_22_11_2026_15_05_00" src="https://github.com/user-attachments/assets/1e25f5bc-3a65-43db-bddc-c3d62326d505" />
+
+- _H1_-terminaalissa ajetaan komento ```python3 sniff_icmp.py```, joka kuuntelee liikennettä.
+- _H2_-terminaalissa lähetetään ```ping 10.0.0.1``` komento.
+- _H3_-terminaalissa käytetään komentoa ```python spoof_icmp.py```, joka lähettää ylimääräisiä ICMP-paketteja.
+- 
+<img width="955" height="703" alt="VirtualBox_Kali_22_11_2026_15_07_24" src="https://github.com/user-attachments/assets/6b928505-ae5d-492a-bf40-b58330be23e9" />
+
 ### TCP Session Hijacking
+
+<img width="955" height="678" alt="VirtualBox_Kali_22_11_2026_15_24_16" src="https://github.com/user-attachments/assets/709eab18-7a19-4a0b-a40b-574718fe62c7" />
+
 ## c) Hakemistossa 02-SDN-DDos_Simulation tryout-kansiossa on työkalut, jotta voit ajaa TCP SYN-Flood-hyökkäyksen turvallisesti. Kirjoita, miten ajoit hyökkäyksen ja miten kyseinen hyökkäys toimii.
 ## Lähteet:
 Karvinen 2026: Verkkoon tunkeutuminen ja tiedustelu. Luettavissa: https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/ Luettu 21.11.2026
